@@ -37,6 +37,5 @@
 
 <p><span style="font-family:times new roman,times,serif"><span style="font-size:14px">We offer free, fast and safe delivery directly to your home.</span></span></p>
 
-<p><span style="font-size:18px"><strong><span style="font-family:times new roman,times,serif">One Stop Shop</span></strong></span></p>
+<p><span style="font-size:18px"><strong><span style="font-family:times new roman,times,serif">One Stop Lantern Shop</span></strong></span></p>
 
-<p><span style="font-family:times new roman,times,serif"><span style="font-size:14px">MyWebAdmin.In - Free Ecommerce Website is an online grocery store. You can find your daily essential needs all under one roof.</span></span></p>

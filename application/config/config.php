@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 /*
 |These are my defined config items
 |
@@ -7,12 +7,12 @@
 |
 */
 // store the company name (will be used every whhere the name of the company is to be specified)
- // Add your website name here
-define("COMPANYNAME","MyWebAdmin.In");
+// Add your website name here
+define("COMPANYNAME", "Smiling Star");
 
 //will store the base url
 //Add your website url here 
-define("COMPANYURL", ""); 
+define("COMPANYURL", "");
 
 
 //-------------------------------------------------------------------------
@@ -22,25 +22,24 @@ define("COMPANYURL", "");
 //stores the database prefix for the database and tables
 // Database prefix is the prefix with the database name as well as prefix for the table names
 //Add Database prefix here
-define("DBPREFIX","");  
+define("DBPREFIX", "");
 
 // Keep as it is for same if MySQL server is running on same server
-define("DBHOSTNAME",'localhost');
+define("DBHOSTNAME", 'localhost');
 
- // Add your database name here
-define("DBNAME",DBPREFIX.'smilingstar'); // Here the database name is 'dummy_myecommerce'
+// Add your database name here
+define("DBNAME", DBPREFIX . 'smilingstar'); // Here the database name is 'dummy_myecommerce'
 
 // Add your database user name here
-define("DBUSER",DBPREFIX.'smilingstar_admin');  // Here the username is 'dummy_website'
+define("DBUSER", DBPREFIX . 'smilingstar_admin');  // Here the username is 'dummy_website'
 
 // Add your database password here
-define("DBPWD",'secret');
+define("DBPWD", 'secret');
 
-if(file_exists(BASEPATH."../createtables.php"))
-{
-	include(BASEPATH."../createtables.php");
-	unlink(BASEPATH."../createtables.php");
-	header("location:".COMPANYURL);
+if (file_exists(BASEPATH . "../createtables.php")) {
+  include(BASEPATH . "../createtables.php");
+  unlink(BASEPATH . "../createtables.php");
+  header("location:" . COMPANYURL);
 }
 /* 
 |--------------------------------------------------------------------------
@@ -56,7 +55,7 @@ if(file_exists(BASEPATH."../createtables.php"))
 | path to your installation.
 |
 */
-$config['base_url']	= COMPANYURL;
+$config['base_url'] = COMPANYURL;
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -85,7 +84,7 @@ $config['index_page'] = 'index.php';
 | 'ORIG_PATH_INFO'	Uses the ORIG_PATH_INFO
 |
 */
-$config['uri_protocol']	= 'AUTO';
+$config['uri_protocol'] = 'AUTO';
 
 /*
 |--------------------------------------------------------------------------
@@ -110,7 +109,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'english';
+$config['language'] = 'english';
 
 /*
 |--------------------------------------------------------------------------
@@ -195,11 +194,11 @@ $config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
 | use segment based URLs.
 |
 */
-$config['allow_get_array']		= TRUE;
+$config['allow_get_array'] = TRUE;
 $config['enable_query_strings'] = FALSE;
-$config['controller_trigger']	= 'c';
-$config['function_trigger']		= 'm';
-$config['directory_trigger']	= 'd'; // experimental not currently in use
+$config['controller_trigger'] = 'c';
+$config['function_trigger'] = 'm';
+$config['directory_trigger'] = 'd'; // experimental not currently in use
 
 /*
 |--------------------------------------------------------------------------
@@ -285,15 +284,15 @@ $config['encryption_key'] = 'tryecommerce';
 | 'sess_time_to_update'		= how many seconds between CI refreshing Session Information
 |
 */
-$config['sess_cookie_name']		= 'ci_session';
-$config['sess_expiration']		= 0;
-$config['sess_expire_on_close']	= FALSE;
-$config['sess_encrypt_cookie']	= FALSE;
-$config['sess_use_database']	= TRUE;
-$config['sess_table_name']		= DBPREFIX.'_sessions';
-$config['sess_match_ip']		= FALSE;
-$config['sess_match_useragent']	= TRUE;
-$config['sess_time_to_update']	= 300;
+$config['sess_cookie_name'] = 'ci_session';
+$config['sess_expiration'] = 0;
+$config['sess_expire_on_close'] = FALSE;
+$config['sess_encrypt_cookie'] = FALSE;
+$config['sess_use_database'] = TRUE;
+$config['sess_table_name'] = DBPREFIX . '_sessions';
+$config['sess_match_ip'] = FALSE;
+$config['sess_match_useragent'] = TRUE;
+$config['sess_time_to_update'] = 300;
 
 /*
 |--------------------------------------------------------------------------
@@ -306,10 +305,10 @@ $config['sess_time_to_update']	= 300;
 | 'cookie_secure' =  Cookies will only be set if a secure HTTPS connection exists.
 |
 */
-$config['cookie_prefix']	= "";
-$config['cookie_domain']	= "";
-$config['cookie_path']		= "/";
-$config['cookie_secure']	= FALSE;
+$config['cookie_prefix'] = "";
+$config['cookie_domain'] = "";
+$config['cookie_path'] = "/";
+$config['cookie_secure'] = FALSE;
 
 /*
 |--------------------------------------------------------------------------

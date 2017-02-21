@@ -215,31 +215,16 @@ $theme_url = base_url() . "theme/";
       <span class="icon-bar"></span>
     </a>
     <div class="navbar-inner">
-      <a class="brand" href="<?php echo base_url(); ?>"><img src="<?php echo base_url() . "images/logo.png"; ?>"
-                                                             alt="Bootsshop"/></a>
-      <form class="form-inline navbar-search" method="get" action="<?php echo base_url() . "product/SearchResults"; ?>">
-        <input id="srchFld" name="product_search" placeholder="Type Product Name" class="srchTxt" type="text"
-               autocomplete="off"/>
-        <select class="srchTxt" name="brands_search">
-          <option value="All">Select Brands</option>
-          <?php
-          foreach ($obj->brandsList as $brands) {
-            echo "<option value = '" . $brands['brand_id'] . "'>" . $brands['brand_name'] . "</option>";
-          }
-          ?>
-        </select>
-        <button type="submit" id="submitButton" class="btn btn-primary">Go</button>
-      </form><!--
-	<div class="span3">
+      <a class="brand" href="<?php echo base_url(); ?>"></a>
+      <div class="span3">
 		<span style="font-size: 15px; color : #006dcc; line-height: 28px; ">
-			<center>
-				Call Us : <br /> <b style="font-size: 25px; font-family: Tahoma, Geneva, sans-serif;">927-22-00-333 </b>
-			</center>
+			Call Us : <br/> <b style="font-size: 25px; font-family: Tahoma, Geneva, sans-serif;">927-22-00-333 </b>
 		</span>
-	</div>-->
+      </div>
+
       <ul id="topMenu" class="nav pull-right">
-        <li class=""><a href="<?php echo base_url(); ?>product/viewLatestProducts">New Products</a></li>
-        <li class=""><a href="<?php echo base_url(); ?>product/viewFeaturedProducts">Featured Products</a></li>
+        <li class=""><a href="<?php echo base_url(); ?>product/viewLatestProducts">New Lanterns</a></li>
+        <li class=""><a href="<?php echo base_url(); ?>product/viewFeaturedProducts">Featured Lanterns</a></li>
         <li class=""><a href="<?php echo base_url() . "product/viewDiscountProducts"; ?>">Specials Offer</a></li>
         <li class=""><a href="<?php echo base_url(); ?>contactus">Contact</a></li>
         <li class="">
@@ -301,7 +286,6 @@ $theme_url = base_url() . "theme/";
   </div>
 </div>
 </div>
-<!-- Header End====================================================================== -->
 <?php
 if (TRUE)
 {
