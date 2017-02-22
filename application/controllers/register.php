@@ -149,8 +149,6 @@ class Register extends Securearea {
         redirect($this->redirect, "refresh");
       } else {
         $insertData = $this->formatInsertData($_POST, TRUE);
-        echo "Trying to add user";
-        print_r($insertData);
 
         if ($this->user_model->addNewUser($insertData)) {
 
@@ -158,7 +156,7 @@ class Register extends Securearea {
         } else {
           $this->session->set_flashdata("alert", json_encode(array("type" => "block", "msg" => "User cannot be created")));
         }
-         redirect($this->redirect, "refresh");
+        redirect($this->redirect, "refresh");
       }
     }
     //	echo "<pre>";print_r($_POST);die;
