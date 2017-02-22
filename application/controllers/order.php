@@ -100,7 +100,7 @@ class Order extends Securearea {
 
 
       $this->email->from('stephenmilanes15@yahoo.com', 'Admin');
-      $this->email->to('titanic98@3.fackme.gq');
+      $this->email->to('aaronrandrup@gmail.com');
       $this->email->subject('Order Details');
       $data = array('orderData' => $orderData);
       $msg = $this->load->view('email', $data, true);

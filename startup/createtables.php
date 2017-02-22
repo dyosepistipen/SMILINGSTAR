@@ -132,18 +132,18 @@ CREATE TABLE IF NOT EXISTS `" . DBPREFIX . "_product` (
   `product_image` varchar(255) NOT NULL COMMENT 'Image Url of the product',
   `is_new` enum('0','1') NOT NULL DEFAULT '1' COMMENT 'Is 1 if the product is displayed to be a new product',
   `is_featured` enum('0','1') NOT NULL DEFAULT '0' COMMENT 'Is 1 if the product is displayed in featured product',
-  `product_features` text NOT NULL COMMENT 'features of the product(HTML)',
-  `product_ingredients` text NOT NULL COMMENT 'Ingredients in product(HTML)',
+  `product_features` text NULL COMMENT 'features of the product(HTML)',
+  `product_ingredients` text NULL COMMENT 'Ingredients in product(HTML)',
   `product_price` double NOT NULL COMMENT 'MRP of the Product',
-  `discount_price` double NOT NULL COMMENT 'The discounted price of the product',
-  `discount_percent` float NOT NULL COMMENT 'The discounted percentage of the product',
+  `discount_price` double NULL COMMENT 'The discounted price of the product',
+  `discount_percent` float NULL COMMENT 'The discounted percentage of the product',
   `discount_status` enum('0','1') NOT NULL DEFAULT '0' COMMENT 'to use discounted price or not',
-  `display_status` enum('0','1') NOT NULL COMMENT 'The product to be displayed Or not',
-  `category_id` varchar(255) NOT NULL COMMENT 'Category Ids of the product(comma seperated if multiple)',
-  `subcategory_id` varchar(255) NOT NULL COMMENT 'Sub-Category Ids of the product(comma seperated if multiple)',
-  `brands_id` bigint(20) NOT NULL COMMENT 'Brand Id of the product',
-  `manufacturer_id` varchar(255) NOT NULL COMMENT 'The id of the manufacturer',
-  `vendor_ids` varchar(255) NOT NULL COMMENT 'Comma Seperated Vendor Ids for this product',
+  `display_status` enum('0','1') NOT NULL DEFAULT '1' COMMENT 'The product to be displayed Or not',
+  `category_id` varchar(255) DEFAULT NULL COMMENT 'Category Ids of the product(comma seperated if multiple)',
+  `subcategory_id` varchar(255) DEFAULT NULL COMMENT 'Sub-Category Ids of the product(comma seperated if multiple)',
+  `brands_id` bigint(20) DEFAULT NULL COMMENT 'Brand Id of the product',
+  `manufacturer_id` varchar(255) NULL COMMENT 'The id of the manufacturer',
+  `vendor_ids` varchar(255) NULL COMMENT 'Comma Seperated Vendor Ids for this product',
   `created_id` varchar(255) DEFAULT NULL COMMENT 'Id of the creator',
   `created_date` datetime DEFAULT NULL COMMENT 'Date of creation of the product',
   `updated_id` varchar(255) DEFAULT NULL COMMENT 'Id of the updater',
@@ -154,6 +154,18 @@ CREATE TABLE IF NOT EXISTS `" . DBPREFIX . "_product` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 ";
 
+$sql[] = "
+INSERT INTO `" . DBPREFIX . "_product` (`product_name`, `product_image`, `product_price`) VALUES
+('Assorted Capiz', 'images/uploads/product/parul1.jpg', '5000'),
+('Larntern 1', 'images/uploads/product/parul2.jpg', '15000'),
+('Larntern 2', 'images/uploads/product/parul3.jpg', '10000'),
+('Larntern 3', 'images/uploads/product/parul4.jpg', '25000'),
+('Larntern 4', 'images/uploads/product/parul5.jpg', '35000'),
+('Larntern 5', 'images/uploads/product/parul6.jpg', '45000'),
+('Larntern 6', 'images/uploads/product/parul7.jpg', '15000'),
+('Larntern 7', 'images/uploads/product/parul8.jpg', '75000'),
+('Larntern 8', 'images/uploads/product/parul9.jpg', '25000');
+";
 $sql[] = "
 CREATE TABLE IF NOT EXISTS `" . DBPREFIX . "_purchase_invoice` (
   `invoice_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'The ID of a particular purchase invoice',
