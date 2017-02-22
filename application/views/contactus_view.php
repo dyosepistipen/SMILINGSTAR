@@ -1,20 +1,21 @@
 <ul class="breadcrumb">
-	<!--<li><a href="index.html">Home</a> <span class="divider">/</span></li>
-	<li class="active">Products Name</li>-->
-	<?php 
-		$breadCrumb = $obj->getBreadCrumb();
-		foreach($breadCrumb as $breadcrumbs)
-		{
-			echo '<li>
-					<a href="'.$breadcrumbs["link"].'">'.$breadcrumbs["name"].'</a><span class="divider">/</span>
+  <!--<li><a href="index.html">Home</a> <span class="divider">/</span></li>
+  <li class="active">Products Name</li>-->
+  <?php
+  $breadCrumb = $obj->getBreadCrumb();
+  foreach ($breadCrumb as $breadcrumbs) {
+    echo '<li>
+					<a href="' . $breadcrumbs["link"] . '">' . $breadcrumbs["name"] . '</a><span class="divider">/</span>
 				</li>';
-		}
-	?>
+  }
+  ?>
 </ul>
 
-<p><span style="color:#000000">All your grocery needs from your fingertips at your doorstep.</span></p>
+<p><span style="color:#000000">Lorem ipsum dolor sit amet, vim nullam aeterno an, ut utamur legimus has, cum omnes facilisis efficiendi cu. Pro at habeo disputando, cum an modo vocent scribentur. Vero feugiat copiosae sea an, quis meis est eu, tale duis argumentum no his. Id appetere disputationi duo. Simul veritus neglegentur in vis. Ut erroribus aliquando voluptatum vis, has ad oblique invenire.
+</span></p>
 
-<p><span style="color:#000000">You can also place an order<!-- by calling us at</span>&nbsp;<strong><a  href="tel:+919272225599" style="font-size:16px">(+91) 9272225599</a></strong> <span style="color:#000000">or--> by email at&nbsp;</span><span style="font-size:16px"><strong><a href="mailto:support@MyWebAdmin.In - Free Ecommerce Website" style="color: rgb(0, 85, 128); line-height: 1.6em; text-decoration: none; outline: 0px;">support@MyWebAdmin.In - Free Ecommerce Website</a></strong></span></p>
+<p><span style="color:#000000">Te magna gloriatur ius, dicam recusabo ea pri. In cum quis eruditi, cum ex meis indoctum, id sed omittantur necessitatibus. Nec ne hinc nobis, his cu postea eripuit. Est ea eleifend senserit. Partem dolorem signiferumque no vim, an pri autem harum, postea propriae pertinax ne mea.</span>
+</p>
 
 <p>&nbsp;</p>
 
@@ -26,4 +27,7 @@
 
 <p><em>If you have experienced any problem with our services or you think of a way we can improve it, </em></p>
 
-<p><em>Drop us a mail with the problem that you are facing as its subject at <a href="mailto:contact@MyWebAdmin.In - Free Ecommerce Website" style="color: rgb(0, 85, 128); line-height: 1.6em; text-decoration: none; outline: 0px;">contact@MyWebAdmin.In - Free Ecommerce Website</a></em></p>
+<p><em>Drop us a mail with the problem that you are facing as its subject at <a
+      href="mailto:contact@MyWebAdmin.In - Free Ecommerce Website"
+      style="color: rgb(0, 85, 128); line-height: 1.6em; text-decoration: none; outline: 0px;">contact@MyWebAdmin.In -
+      Free Ecommerce Website</a></em></p>
