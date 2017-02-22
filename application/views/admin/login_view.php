@@ -55,7 +55,7 @@ $theme_link =  base_url()."theme_back/";?>
 	<![endif]-->
 
 	<!-- The fav icon -->
-	<link rel="shortcut icon" href="<?php echo $theme_link; ?>img/favicon.ico">
+	<link rel="shortcut icon" href="<?php echo base_url() . "images/favicon.png"; ?>">
 	<?php echo "<script>var g_base_link = '".$theme_link."'</script>";	?>
 	<script>
 		$("document").ready(function()

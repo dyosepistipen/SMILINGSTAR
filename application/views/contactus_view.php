@@ -11,7 +11,6 @@
 		}
 	?>
 </ul>
-<p><span style="color:#000000">MyWebAdmin.In - Free Ecommerce Website was designed to provide the best shopping experience for online grocery shoppers.</span></p>
 
 <p><span style="color:#000000">All your grocery needs from your fingertips at your doorstep.</span></p>
 

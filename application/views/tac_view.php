@@ -41,8 +41,6 @@
 
 <p><span style="font-family:times new roman,times,serif"><span style="font-size:14px">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will take the returned product back with us and make the necessary adjustments to your order value.</span></span></p>
 
-<p><span style="font-family:times new roman,times,serif"><span style="font-size:14px">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; However, please note: If a product is returned due to a change in mind and your order value goes below our minimum order requirement of Rs. 1000, you will be assessed an additional delivery fee.</span></span></p>
-
 <p>&nbsp;</p>
 
 <p><span style="font-family:times new roman,times,serif"><span style="font-size:14px"><strong>Information collected</strong></span></span></p>

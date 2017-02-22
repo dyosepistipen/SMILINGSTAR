@@ -19,7 +19,7 @@
 		</div>
 
 		<footer>
-			<p class="pull-left">&copy; <a href="<?php echo COMPANYURL; ?>" target="_blank"><?php echo COMPANYNAME; ?></a> 2013</p>
+			<p class="pull-left">&copy; <a href="<?php echo COMPANYURL; ?>" target="_blank"><?php echo COMPANYNAME; ?></a> 2017</p>
 			<p class="pull-right">Powered by: <a href="http://usman.it/free-responsive-admin-template">Charisma</a></p>
 		</footer>
 		

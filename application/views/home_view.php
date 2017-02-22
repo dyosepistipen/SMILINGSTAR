@@ -40,7 +40,7 @@ if ($featuredproducts) {
 						  <i class="tag"></i>
 							<a style = "width : 186px;height:160px;" href="' . base_url() . 'product/' . urlencode(addunderscores($products['product_name'])) . '">';
             if ($products['product_image'])
-              echo '<img src="' . $products['product_image'] . '&width=186&height=160" alt="">';
+              echo '<img src="' . $products['product_image'] . '" alt="">';
 
 
             echo '		</a>
@@ -50,10 +50,10 @@ if ($featuredproducts) {
             if ($products['discount_status'] == '1') {
               echo '
 					<strong>Price&nbsp;:</strong>&nbsp;<span class = "price-number" style = "text-decoration:line-through;color : red;">Rs.' . number_format($products['product_price']) . '/-</span>
-						<strong>Discount&nbsp;Price&nbsp;:</strong>&nbsp;<span class = "price-number" style = "">Rs.' . number_format($products['discount_price']) . '/- </span>	
+						<strong>Discount&nbsp;Price&nbsp;:</strong>&nbsp;<span class = "price-number" style = "">Php.' . number_format($products['discount_price']) . '/- </span>	
 					';
             } else {
-              echo '<strong>Price&nbsp;:</strong>&nbsp;<span class = "price-number">Rs.' . number_format($products['product_price']) . '/-</span>';
+              echo '<strong>Price&nbsp;:</strong>&nbsp;<span class = "price-number">Php.' . number_format($products['product_price']) . '/-</span>';
             }
 
             echo '<br /><br />
@@ -99,7 +99,7 @@ if ($featuredproducts) {
         echo '<i class="tag"></i>';
       }
       if ($products['product_image'])
-        echo '<img src="' . $products['product_image'] . '&width=260&height=160" alt=""/>';
+        echo '<img src="' . $products['product_image'] . '" alt=""/>';
 
       echo '	</a>
 							<div class="caption">
@@ -109,10 +109,10 @@ if ($featuredproducts) {
       if ($products['discount_status'] == '1') {
         echo '
 						<strong>Price&nbsp;:</strong>&nbsp;<span class = "price-number" style = "text-decoration:line-through;color : red;">Rs.' . number_format($products['product_price']) . '/-</span>
-							<strong>Discount&nbsp;Price&nbsp;:</strong>&nbsp;<span class = "price-number" style = "">Rs.' . number_format($products['discount_price']) . '/- </span>	
+							<strong>Discount&nbsp;Price&nbsp;:</strong>&nbsp;<span class = "price-number" style = "">Php.' . number_format($products['discount_price']) . '/- </span>	
 						';
       } else {
-        echo '<strong>Price&nbsp;:</strong>&nbsp;<span class = "price-number">Rs.' . number_format($products['product_price']) . '/-</span>';
+        echo '<strong>Price&nbsp;:</strong>&nbsp;<span class = "price-number">Php.' . number_format($products['product_price']) . '/-</span>';
       }
       echo '		</div>	
 							</div>

@@ -7,7 +7,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="#"> <img alt="Charisma Logo" src="<?php echo $theme_link; ?>img/logo20.png" /> <span><?php echo COMPANYNAME; ?></span></a>
+				<a class="brand" href="#"> <img alt="Charisma Logo" src="<?php echo base_url() . "images/favicon.png"; ?>" /> <span><?php echo COMPANYNAME; ?> ADMIN</span></a>
 				
 				<!-- theme selector starts -->
 				<div class="btn-group pull-right theme-container" >

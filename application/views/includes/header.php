@@ -217,9 +217,6 @@ $theme_url = base_url() . "theme/";
     <div class="navbar-inner">
       <a class="brand" href="<?php echo base_url(); ?>"></a>
       <div class="span3">
-		<span style="font-size: 15px; color : #006dcc; line-height: 28px; ">
-			Call Us : <br/> <b style="font-size: 25px; font-family: Tahoma, Geneva, sans-serif;">927-22-00-333 </b>
-		</span>
       </div>
 
       <ul id="topMenu" class="nav pull-right">

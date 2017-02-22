@@ -96,7 +96,7 @@
 <p><span style="font-family:times new roman,times,serif"><span style="font-size:14px">How will I reschedule the delivery?</span></span></p>
 
 <ul style="list-style-type:square">
-	<li><span style="font-family:times new roman,times,serif"><span style="font-size:14px">Call us at our helpline number for rescheduling the delivery or email us for new delivery date. You will be charged Rs. 50.</span></span></li>
+	<li><span style="font-family:times new roman,times,serif"><span style="font-size:14px">Call us at our helpline number for rescheduling the delivery or email us for new delivery date. You will be charged PHP. 50.</span></span></li>
 </ul>
 
 <p>&nbsp;</p>
