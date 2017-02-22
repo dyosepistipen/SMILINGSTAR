@@ -156,15 +156,15 @@ CREATE TABLE IF NOT EXISTS `" . DBPREFIX . "_product` (
 
 $sql[] = "
 INSERT INTO `" . DBPREFIX . "_product` (`product_name`, `product_image`, `product_price`) VALUES
-('Assorted Capiz', 'images/uploads/product/parul1.jpg', '5000'),
-('Larntern 1', 'images/uploads/product/parul2.jpg', '15000'),
-('Larntern 2', 'images/uploads/product/parul3.jpg', '10000'),
-('Larntern 3', 'images/uploads/product/parul4.jpg', '25000'),
-('Larntern 4', 'images/uploads/product/parul5.jpg', '35000'),
-('Larntern 5', 'images/uploads/product/parul6.jpg', '45000'),
-('Larntern 6', 'images/uploads/product/parul7.jpg', '15000'),
-('Larntern 7', 'images/uploads/product/parul8.jpg', '75000'),
-('Larntern 8', 'images/uploads/product/parul9.jpg', '25000');
+('Assorted Capiz', '/images/uploads/product/parul1.jpg', '5000'),
+('Larntern 1', '/images/uploads/product/parul2.jpg', '15000'),
+('Larntern 2', '/images/uploads/product/parul3.jpg', '10000'),
+('Larntern 3', '/images/uploads/product/parul4.jpg', '25000'),
+('Larntern 4', '/images/uploads/product/parul5.jpg', '35000'),
+('Larntern 5', '/images/uploads/product/parul6.jpg', '45000'),
+('Larntern 6', '/images/uploads/product/parul7.jpg', '15000'),
+('Larntern 7', '/images/uploads/product/parul8.jpg', '75000'),
+('Larntern 8', '/images/uploads/product/parul9.jpg', '25000');
 ";
 $sql[] = "
 CREATE TABLE IF NOT EXISTS `" . DBPREFIX . "_purchase_invoice` (
