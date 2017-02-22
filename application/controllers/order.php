@@ -8,6 +8,7 @@ class Order extends Securearea {
   function __construct() {
     parent::__construct();
     $this->load->helper("url");
+    $this->load->model("User_model");
     $this->load->model("admin/areas_model");
     $this->load->model("admin/order_model");
     $config['protocol'] = "smtp";
@@ -98,9 +99,9 @@ class Order extends Securearea {
       $this->order_model->placeOrder($orderData);
       //TODO: send email
 
-
+      $customer = $this->User_model->getUserByID($orderData['customer_id']);
       $this->email->from('stephenmilanes15@yahoo.com', 'Admin');
-      $this->email->to('aaronrandrup@gmail.com');
+      $this->email->to($customer[0]['email']);
       $this->email->subject('Order Details');
       $data = array('orderData' => $orderData);
       $msg = $this->load->view('email', $data, true);

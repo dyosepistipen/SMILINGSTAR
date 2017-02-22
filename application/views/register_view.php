@@ -205,10 +205,10 @@
 
     <h4>Your Contact Details</h4>
     <div class="control-group">
-      <label class="control-label" for="mobile">Mobile Phone <sup class="compulsory">*</sup></label>
+      <label class="control-label" for="mobile">Mobile Phone</label>
       <div class="controls">
         <div class="input-prepend">
-          <span class="add-on">+91</span>
+          <span class="add-on">+63</span>
           <input type="text" name="mobile" id="mobile" value="<?php echo $formData["mobile"]; ?>"
                  placeholder="Mobile Phone"/>
         </div>
@@ -225,7 +225,7 @@
     </div>
 
     <div class="control-group">
-      <label class="control-label" for="input_email">Email </label>
+      <label class="control-label" for="input_email">Email <sup class="compulsory">*</sup></label>
       <div class="controls">
         <input type="text" id="email" value="<?php echo $formData["email"]; ?>" name="email" placeholder="Email">
         <span class="errormsg"><?php echo form_error('email'); ?></span>
@@ -245,18 +245,18 @@
     <div class="control-group">
       <label class="control-label" for="city">Area <sup class="compulsory">*</sup></label>
       <div class="controls">
-<!--        <select name="area" id="area" onchange="$('#PIN').val($(this).find('option:selected').attr('data'));">
+        <select name="area" id="area" onchange="$('#PIN').val($(this).find('option:selected').attr('data'));">
           <option value="">Select Area</option>
           <?php
-/*          foreach ($areas as $area) {
+          foreach ($areas as $area) {
             if ($formData["area"] == $area["area_name"]) {
               echo '<option data = "' . $area["area_pin"] . '" value = "' . $area["area_name"] . '" selected>' . $area["area_name"] . '</option>';
             } else
               echo '<option data = "' . $area["area_pin"] . '" value = "' . $area["area_name"] . '">' . $area["area_name"] . '</option>';
           }
-          */?>
+          ?>
         </select>
--->        <span class="errormsg"><?php echo form_error('address'); ?></span>
+        <span class="errormsg"><?php echo form_error('address'); ?></span>
       </div>
     </div>
     <div class="control-group">

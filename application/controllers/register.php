@@ -98,12 +98,12 @@ class Register extends Securearea {
       array(
         'field' => 'mobile',
         'label' => 'Mobile Number',
-        'rules' => 'trim|required|xss_clean|exact_length[10]|integer'
+        'rules' => 'trim|xss_clean|exact_length[10]|integer'
       ),
       array(
         'field' => 'email',
         'label' => 'Email',
-        'rules' => 'trim|valid_email' . $chkunique
+        'rules' => 'required|trim|valid_email' . $chkunique
       ),
       array(
         'field' => 'address',
