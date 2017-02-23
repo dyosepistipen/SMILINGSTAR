@@ -86,7 +86,7 @@ if ($featuredproducts) {
 <?php if ($latestproducts) {
   ?>
   <div style="clear: both;"></div>
-  <h4>Latest Products (<a href="<?php echo base_url(), "product/viewLatestProducts" ?>">View All</a>)</h4>
+  <h4>Latest Products</h4>
   <ul class="thumbnails">
     <?php
     // 	echo "<pre>";print_r($latestproducts);die;

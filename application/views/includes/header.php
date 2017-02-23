@@ -220,10 +220,7 @@ $theme_url = base_url() . "theme/";
       </div>
 
       <ul id="topMenu" class="nav pull-right">
-        <li class=""><a href="<?php echo base_url(); ?>product/viewLatestProducts">New Lanterns</a></li>
-        <li class=""><a href="<?php echo base_url(); ?>product/viewFeaturedProducts">Featured Lanterns</a></li>
-        <li class=""><a href="<?php echo base_url() . "product/viewDiscountProducts"; ?>">Specials Offer</a></li>
-        <li class=""><a href="<?php echo base_url(); ?>contactus">Contact</a></li>
+        <li class=""><a href="<?php echo base_url(); ?>/">Home</a></li>
         <li class="">
           <?php
           $querystring = "";

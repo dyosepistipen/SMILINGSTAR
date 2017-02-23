@@ -16,7 +16,6 @@ $theme_url = base_url() . "theme/";
         if ($obj->isloggedin) {
           ?>
           <a href="<?php echo base_url() . 'register/useredit/' . $obj->userData["id"]; ?>">YOUR ACCOUNT</a>
-          <a href="<?php echo base_url() . 'order/orderhistory'; ?>">ORDER HISTORY</a>
           <?php
         } else {
           ?>
@@ -27,41 +26,15 @@ $theme_url = base_url() . "theme/";
         ?>
       </div>
       <div class="span3">
-        <h5>INFORMATION</h5>
-        <a href="<?php echo base_url(); ?>contactus">CONTACT</a>
-        <a href="<?php echo base_url(); ?>register">REGISTRATION</a>
-        <a href="<?php echo base_url(); ?>aboutus">ABOUT US</a>
-        <a href="<?php echo base_url(); ?>tac">TERMS AND CONDITIONS</a>
-        <a href="<?php echo base_url(); ?>faq">FAQ</a>
-      </div>
-      <div class="span3">
-        <h5>OUR OFFERS</h5>
-        <a href="<?php echo base_url() . "product/viewLatestProducts"; ?>">LANTERNS</a>
-        <a href="<?php echo base_url() . "product/viewFeaturedProducts"; ?>">FEATURED LANTERNS</a>
-        <a href="<?php echo base_url() . "product/viewDiscountProducts"; ?>">SPECIAL OFFERS</a>
-      </div>
-      <?php if ($this->areas) { ?>
-        <div class="span12">
-          <h5 id="areas_covered_bar" style="cursor:pointer">AREAS COVERED BY US</h5>
-          <div id="areas_covered">
-            <?php
-            $arrAreas = array();
-            $i = 0;
-            foreach ($this->areas as $area) {
-              if (!(isset($arrAreas[$i]))) $arrAreas[$i] = "";
-              $arrAreas[$i] .= "<a href='#'>" . $area["area_name"] . "</a>";
-              $i++;
-              if ($i == 5) $i = 0;
-            }
-            for ($i = 0; $i < 5; $i++) {
-              echo "<div class = 'span2'  >" . strtoupper($arrAreas[$i]) . "</div>";
-            }
-            ?>
-          </div>
-        </div>
-      <?php } ?>
 
-      <!--<div id="socialMedia" class="span3 pull-right">
+        <div class="span3">
+
+        </div>
+        <?php if ($this->areas) { ?>
+
+        <?php } ?>
+
+        <!--<div id="socialMedia" class="span3 pull-right">
 				<h5>SOCIAL MEDIA </h5>
 				<a href="<?php echo $theme_url; ?>#"><img width="60" height="60" src="<?php echo $theme_url; ?>themes/images/facebook.png" title="facebook" alt="facebook"/></a>
 				<a href="<?php echo $theme_url; ?>#"><img width="60" height="60" src="<?php echo $theme_url; ?>themes/images/twitter.png" title="twitter" alt="twitter"/></a>
@@ -70,29 +43,29 @@ $theme_url = base_url() . "theme/";
 		 </div>-->
 
 
-    </div><!-- Container End -->
+      </div><!-- Container End -->
+    </div>
+    <!-- Placed at the end of the document so the pages load faster ============================================= -->
+    <script src="<?php echo $theme_url; ?>themes/js/bootstrap.min.js?allowall=allow" type="text/javascript"></script>
+    <script src="<?php echo $theme_url; ?>themes/js/google-code-prettify/prettify.js?allowall=allow"></script>
+    <!-- autocomplete library -->
+    <script src="<?php echo base_url() . "theme_back/"; ?>js/bootstrap-typeahead.js?allowall=allow"></script>
+
+    <script src="<?php echo $theme_url; ?>themes/js/bootshop.js?allowall=allow"></script>
+    <script src="<?php echo $theme_url; ?>themes/js/jquery.lightbox-0.5.js?allowall=allow"></script>
+    <script src="<?php echo base_url(); ?>/js/myscripts.js?allowall=allow"></script>
   </div>
-  <!-- Placed at the end of the document so the pages load faster ============================================= -->
-  <script src="<?php echo $theme_url; ?>themes/js/bootstrap.min.js?allowall=allow" type="text/javascript"></script>
-  <script src="<?php echo $theme_url; ?>themes/js/google-code-prettify/prettify.js?allowall=allow"></script>
-  <!-- autocomplete library -->
-  <script src="<?php echo base_url() . "theme_back/"; ?>js/bootstrap-typeahead.js?allowall=allow"></script>
-
-  <script src="<?php echo $theme_url; ?>themes/js/bootshop.js?allowall=allow"></script>
-  <script src="<?php echo $theme_url; ?>themes/js/jquery.lightbox-0.5.js?allowall=allow"></script>
-  <script src="<?php echo base_url(); ?>/js/myscripts.js?allowall=allow"></script>
-</div>
-<div style="position : fixed;bottom : 50px;right : 50px;display: none;" id="gototop">
-  <span class="btn btn-alert"><i class="icon-arrow-up"></i> Go To Top</span>
-</div>
-<style>
-  @media (max-width: 600px) {
-    #show-cart-dropdown {
-      display: none !important;
+  <div style="position : fixed;bottom : 50px;right : 50px;display: none;" id="gototop">
+    <span class="btn btn-alert"><i class="icon-arrow-up"></i> Go To Top</span>
+  </div>
+  <style>
+    @media (max-width: 600px) {
+      #show-cart-dropdown {
+        display: none !important;
+      }
     }
-  }
 
-</style>
-<!--<span id="themesBtn"></span>-->
-</body>
-</html>
+  </style>
+  <!--<span id="themesBtn"></span>-->
+  </body>
+  </html>

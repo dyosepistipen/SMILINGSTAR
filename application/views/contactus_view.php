@@ -25,9 +25,4 @@
 
 <p>&nbsp;</p>
 
-<p><em>If you have experienced any problem with our services or you think of a way we can improve it, </em></p>
 
-<p><em>Drop us a mail with the problem that you are facing as its subject at <a
-      href="mailto:contact@MyWebAdmin.In - Free Ecommerce Website"
-      style="color: rgb(0, 85, 128); line-height: 1.6em; text-decoration: none; outline: 0px;">contact@MyWebAdmin.In -
-      Free Ecommerce Website</a></em></p>
