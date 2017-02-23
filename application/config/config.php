@@ -8,7 +8,7 @@
 */
 // store the company name (will be used every whhere the name of the company is to be specified)
 // Add your website name here
-define("COMPANYNAME", "Smiling Star");
+define("COMPANYNAME", "Smilling Star");
 
 //will store the base url
 //Add your website url here 

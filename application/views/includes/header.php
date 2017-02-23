@@ -270,7 +270,7 @@ $theme_url = base_url() . "theme/";
           </li>
           <li id="registerBtn">
             <a href="<?php echo base_url() . 'register'; ?>" role="button" style="padding-right:0"><span
-                class="btn btn-warning"><i class="icon-share"></i>Register here</span></a>
+                class="btn btn-warning btn-large"><i class="icon-share"></i>Register here</span></a>
           </li>
           <?php
         }

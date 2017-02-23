@@ -31,7 +31,6 @@ class Sales extends SecureAccess {
       "shipping_area" => "Shipping Area",
       "shipping_PIN" => "Shipping PIN",
       "order_date_time" => "Recieving Date",
-      "vendors" => "Probable Vendors"
     );
     $label = "Pending Orders";
     $action = array

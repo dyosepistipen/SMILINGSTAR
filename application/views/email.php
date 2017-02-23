@@ -15,6 +15,15 @@
 
 <?php
 print_r($orderData);
+echo 'oyne' . $orderData['shippingaddress'];
+echo 'oyne' . $orderData['shipping_area'];
+echo 'oyne' . $orderData['shipping_PIN'];
+echo 'oyne' . $orderData['order_date_time'];
+
+$array = json_decode($orderData['cart_data'], true);
+
+
+echo $array;
 ?>
 </body>
 

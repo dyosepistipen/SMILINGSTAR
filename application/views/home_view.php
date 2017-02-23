@@ -37,7 +37,7 @@ if ($featuredproducts) {
             echo '
 						<li class="span3">
 						  <div class="thumbnail">
-						  <i class="tag"></i>
+						  
 							<a style = "width : 186px;height:160px;" href="' . base_url() . 'product/' . urlencode(addunderscores($products['product_name'])) . '">';
             if ($products['product_image'])
               echo '<img src="' . $products['product_image'] . '" alt="">';
@@ -86,7 +86,7 @@ if ($featuredproducts) {
 <?php if ($latestproducts) {
   ?>
   <div style="clear: both;"></div>
-  <h4>Latest Products</h4>
+  <h4>Products</h4>
   <ul class="thumbnails">
     <?php
     // 	echo "<pre>";print_r($latestproducts);die;
@@ -96,7 +96,7 @@ if ($featuredproducts) {
 						  <div class="thumbnail">
 							<a  href="' . base_url() . 'product/' . urlencode(addunderscores($products['product_name'])) . '">';
       if ($products['is_new'] == '1') {
-        echo '<i class="tag"></i>';
+        echo '';
       }
       if ($products['product_image'])
         echo '<img src="' . $products['product_image'] . '" alt=""/>';

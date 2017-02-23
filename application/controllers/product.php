@@ -88,7 +88,7 @@ class Product extends Securearea {
     $view["totalProducts"] = $this->product_model->getProduct("", "", " AND is_new = '1'", "", "", "", " COUNT(product_id) AS prodcnt");
     $view["totalProducts"] = $view["totalProducts"][0]["prodcnt"];
     $view["heading"] = "Latest Products";
-    $view["heading_message"] = "Here are the list of Latest Products available with us.";
+    $view["heading_message"] = "Here are the list of Products available with us.";
     $view["more_products_url"] = base_url() . "product/ajax_Latest/";
     $viewp['obj'] = $this;
     $this->load->view('ListProduct_view', $view);
