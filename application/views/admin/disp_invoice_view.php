@@ -51,7 +51,7 @@
 </head>
 <body>
 	<div style="background-color: #b3b7b5;float:left;width: 100%">	
-		<img style="float:left;" src = "<?php echo base_url(); ?>theme/themes/images/logo.png" />			
+		<img style="float:left;" src = "<?php echo base_url(); ?>/images/logo.png" />
 		<center style="padding-top: 20px; padding-right: 150px;">
 			<strong style="text-align: center;">
 				<u style="font-size: 24px;">

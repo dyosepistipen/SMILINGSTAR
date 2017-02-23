@@ -1259,14 +1259,14 @@ $sql[] = "
 CREATE TABLE IF NOT EXISTS `" . DBPREFIX . "_sales` (
   `order_id` bigint(20) NOT NULL,
   `customer_id` bigint(20) NOT NULL,
-  `vendor_ids` text NOT NULL,
+  `vendor_ids` text NULL,
   `order_date` datetime NOT NULL,
   `shipping_address` text NOT NULL,
   `shipping_area` text NOT NULL,
   `shipping_pin` int(11) NOT NULL,
   `product_ids` text NOT NULL,
   `product_quantities` text NOT NULL,
-  `delivered_by` bigint(20) NOT NULL,
+  `delivered_by` bigint(20) NULL,
   `created_by` bigint(20) NOT NULL,
   `created_date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
