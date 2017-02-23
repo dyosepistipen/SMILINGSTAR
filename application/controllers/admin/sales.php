@@ -168,11 +168,9 @@ class Sales extends SecureAccess {
     $data['oObj'] = $this;
     $this->load->view("admin/includes/admin_header", $data);
     $orderData = $this->sales_model->getSalesInvoice();
-    $headings = array
-    (
+    $headings = array(
       "order_id" => "Order No.",
       "customer_name" => "Customer Name",
-      "delivery_name" => "Delivery Boy",
       "order_date" => "Order Date",
       "shipping_address" => "Shipping Address",
       "shipping_area" => "Shipping Area",
