@@ -10,21 +10,34 @@
 <?php
 
 ?>
-<h1>SMILING STAR ORDER INFO</h1>
+<h2 style="color:green;text-align: center;">Your order is placed successfully.</h2>
 
 
-<?php
-print_r($orderData);
-echo 'oyne' . $orderData['shippingaddress'];
-echo 'oyne' . $orderData['shipping_area'];
-echo 'oyne' . $orderData['shipping_PIN'];
-echo 'oyne' . $orderData['order_date_time'];
+<table class="table table-bordered">
+  <tbody>
+  <tr class="techSpecRow">
+    <th colspan="100">Order Details</th>
+  </tr>
+  <tr>
+    <td><b>Shipping Address</b></td>
+    <td colspan="10"><?php
+      echo $orderData['shippingaddress']; ?></td>
+  </tr>
+  <tr>
+    <td><b>Shipping Area</b></td>
+    <td colspan="10">
+      <?php
+      echo $orderData['shipping_area']; ?>
 
-$array = json_decode($orderData['cart_data'], true);
-
-
-echo $array;
-?>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Shipping PIN</b></td>
+    <td colspan="10"><?php
+      echo $orderData['shipping_PIN']; ?></td>
+  </tr>
+  </tbody>
+</table>
 </body>
 
 </html>

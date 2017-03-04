@@ -126,3 +126,8 @@ a:hover {
 .thumbnail img {
   height: 18.8em;
 }
+
+.chart-wrapper {
+  width: 55%;
+  height: 55%;
+}
